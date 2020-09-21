@@ -1,0 +1,78 @@
+/* miniprogram/pages/chooseProjectAndNum/chooseProjectAndNum.wxss */
+.container {
+  position: relative;
+}
+
+.tixi_text {
+  width: 80px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.tixi_button {
+  width: 120px;
+  height: 44px;
+  background-color: grey;
+  position: absolute;
+  left: 100px;
+  top: 39px;
+}
+
+.tishu_text {
+  width: 80px;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+.tishu_button {
+  width: 120px;
+  height: 44px;
+  background-color: grey;
+  position: absolute;
+  left: 100px;
+  top: 89px;
+}
+
+.nandu_text {
+  width: 80px;
+  position: absolute;
+  left: 50px;
+  top: 150px;
+}
+
+.nandu_button {
+  width: 120px;
+  height: 44px;
+  background-color: grey;
+  position: absolute;
+  left: 100px;
+  top: 139px;
+}
+
+.classify_text {
+  width: 80px;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+
+.classify_button {
+  width: 120px;
+  height: 44px;
+  background-color: grey;
+  position: absolute;
+  left: 100px;
+  top: 189px;
+}
+
+.startDati {
+  width: 120px;
+  height: 44px;
+  background-color: grey;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+

@@ -1,0 +1,59 @@
+<!--miniprogram/pages/chooseProjectAndNum/chooseProjectAndNum.wxml-->
+<view class="container">
+
+  <view class="tixi_text" mode="widthFix">题型</view>
+  <button class="tixi_button" bindtap="onClickTixiPicker" mode="widthFix"><view>{{picker_tixi_data}}</view></button>
+
+  <view class="tishu_text" mode="widthFix">题数</view>
+  <button class="tishu_button" bindtap="onClickTishuPicker" mode="widthFix">{{picker_tishu_data}}</button>
+
+
+  <view class="nandu_text" mode="widthFix">难度</view>
+	<button class="nandu_button" bindtap="onClickNanduPicker" mode="widthFix">{{picker_nandu_data}}</button>
+	
+	<view class="classify_text" mode="widthFix">章节</view>
+  <button class="classify_button" bindtap="onClickClassifyPicker" mode="widthFix">{{picker_classify_data}}</button>
+
+</view>
+
+<button class="startDati" bindtap="onClickStartDati" mode="widthFix">开始答题</button>
+
+<picker 
+	isShowPicker="{{isShow_tixi}}"
+	bindsure="sureCallBack_tixi"
+	bindcancle="cancleCallBack_tixi"
+  scrollType="normal"
+  titleText="选择题型"
+	listData="{{listData_tixi}}"
+	indicatorStyle="height:47px"
+></picker>
+
+<picker
+	isShowPicker="{{isShow_tishu}}"
+	bindsure="sureCallBack_tishu"
+	bindcancle="cancleCallBack_tishu"
+  scrollType="normal"
+  titleText="选择题数"
+	listData="{{listData_tishu}}"
+	indicatorStyle="height:47px"
+></picker>
+
+<picker
+	isShowPicker="{{isShow_nandu}}"
+	bindsure="sureCallBack_nandu"
+	bindcancle="cancleCallBack_nandu"
+  scrollType="normal"
+  titleText="选择难度"
+	listData="{{listData_nandu}}"
+	indicatorStyle="height:47px"
+></picker>
+
+<picker
+	isShowPicker="{{isShow_classify}}"
+	bindsure="sureCallBack_classify"
+	bindcancle="cancleCallBack_classify"
+  scrollType="normal"
+  titleText="选择章节"
+	listData="{{listData_classify}}"
+	indicatorStyle="height:47px"
+></picker>
