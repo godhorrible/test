@@ -12,13 +12,8 @@ exports.main = async (event) => {
   if(typeof(union_id)=="undefined"){
     union_id = "123"
   }
-  
-  if(event.ans.length>4){
-    var ans = event.ans
-  }
-  else{
-    var ans = ans_transfer(event.ans)
-  }
+  //当传入ans为""时，置为null
+  var ans = ans_transfer(event.ans)
   var is_finish = true
 
   var time = new Date()
